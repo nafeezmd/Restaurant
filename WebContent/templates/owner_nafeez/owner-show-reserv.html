@@ -1,0 +1,66 @@
+<aside data-spy="affix" data-offset-top="60" data-offset-bottom="50"  width="260" class="col-lg-3 col-sm-4">
+    <div class="panel panel-default">
+
+        <div class="panel-body">
+            <ul class="nav nav-pills nav-stacked">
+                <!--about the course left menu-->
+                <li class="active" >
+                    <a href="#/view-reservation">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        <span class="tab-text">Reservations</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/view-seating">
+                        <span class="glyphicon glyphicon-th"></span>
+                        <span class="tab-text">Seating</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/view-profile" >
+                        <span class="glyphicon glyphicon-list"></span>
+                        <span class="tab-text">Profile</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#/new-reservation" >
+                        <span class="glyphicon glyphicon-user"></span>
+                        <span class="tab-text">New Reservation</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div> <!--end panel-body-->
+
+    </div><!--navbar-header-->
+
+</aside>
+
+
+
+<div class="container">
+    <h3>Users</h3>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>View</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>ZIP</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="p in ownerVm.allReservations">
+            <td><a ng-href="#/users/{{p.confirmationNum}}"><span class="glyphicon glyphicon-user"></span></a></td>
+            <td>{{p.name}}</td>
+            <td>{{p.phone}}</td>
+            <td>{{p.email}}</td>
+            <td>{{p.reservationTime}}</td>
+            <td>{{p.reservationStatus}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

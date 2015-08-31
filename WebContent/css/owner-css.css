@@ -1,0 +1,41 @@
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+.navbar-brand {
+    top:20px;
+    padding: 10px;
+}
+.navbar-brand span.glyphicon {
+    font-size: 1.8em;
+    margin-right: 8px;
+    top: 10px;
+}
+
+footer {
+    position :absolute;
+    bottom : 0;
+    height : 50px;
+    margin-top : 0px;
+
+}
+hr{
+width:100%;
+}
+
+footer p{
+    font-weight: bold;
+    padding-left: 25px;
+
+}
+
+.table th, .table td {
+    border-top: none !important;
+}
+
+table{
+    border-radius: 2px;
+}
+
+.pad-top-20{
+    margin-top: 30px;
+}

@@ -1,0 +1,23 @@
+<div class="tab-pane active" id="check_status">
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="input-group">
+				<input ng-model="confirmationNumb" type="text" class="form-control"
+					placeholder="Enter confirmation number"> <span
+					class="input-group-btn">
+					<button ng-click="check(confirmationNumb)" class="btn btn-default" type="button">Check!</button>
+				</span>
+			</div>
+			<!-- /input-group -->
+			
+			<p>NAME: {{checkStatusVm.reservation.name}}</p>
+			<p>CONFIRM #: {{checkStatusVm.reservation.confirmationNum}}</p>
+			<p>PHONE: {{checkStatusVm.reservation.phone}}</p>
+			<p>EMAIL: {{checkStatusVm.reservation.email}}</p>
+			<p>TIME: {{checkStatusVm.reservation.reservationTime}}</p>
+			<p>STATUS: {{checkStatusVm.reservation.reservationStatus}}</p>
+		</div>
+		<!-- /.col-lg-6 -->
+	</div>
+	<!-- /.row -->
+</div>
